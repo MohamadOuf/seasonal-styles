@@ -1,0 +1,40 @@
+    <html>
+     <head>
+
+        <title>jQuery Test Page</title>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    </head>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <body>
+        <h1>jQuery Test Page</h1>
+        <div id ="myDiv">This is my div!
+<ul>
+<li>I'm a List item!</li>
+<li>I'm a List item!</li>
+<li>I'm a List item!</li>
+<li>I'm a List item!</li>
+<li>I'm a List item!</li>
+<li>I'm a List item!</li>
+</ul>
+
+        </div>
+            <script>
+            $(function(){
+       
+                $("div#myDiv li:even").css("background-color","aqua")
+                $("div#myDiv").hide().fadeIn(5000,function(){
+                $("div#myDiv li").each(function(){
+
+                $(this).slideDown(2000);
+                }); 
+                
+            });
+            
+            //alert("This is not jQuery!");
+
+             </script>
+             
+        </body>
+            </html>
